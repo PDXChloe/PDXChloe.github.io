@@ -31,7 +31,7 @@ nav ul li a {
     letter-spacing: -.1em;
     font-weight: bold;
     color: #d9d9d9;
-    padding: 1em;
+    padding: .5em;
     transition-duration: 2s;
 }
 
@@ -40,8 +40,6 @@ nav ul li a:hover {
     border: solid #b3d9ff;
     transition-duration: 0s;
 }
-
-
 
 header {
     display: flex;
