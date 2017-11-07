@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Chloe Elliot / Web Developer</title>
+    <script>
+        var images=['wood2.jpg','image_url_2','image_url_3','image_url_4'];
+
+        setInterval(function(){
+            var url=images[Math.floor(Math.random() * images.length)];
+            document.body.style.backgroundImage = 'url('+url+')';
+        },5000);
+
+    </script>
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
