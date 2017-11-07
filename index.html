@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Chloe Elliot / Web Developer</title>
-    <script>
-        var images=['wood2.jpg','image_url_2','image_url_3','image_url_4'];
+    <head>
+        <meta charset="UTF-8">
+        <title>Chloe Elliot / Web Developer</title>
+        <script>
+            var images=['wood2.jpg','windmillstairway.jpg','newport.jpg','capehouse.jpg'];
+            let img_index = 0;
 
-        setInterval(function(){
-            var url=images[Math.floor(Math.random() * images.length)];
-            document.body.style.backgroundImage = 'url('+url+')';
-        },5000);
+            setInterval(function(){
+                //var url=images[Math.floor(Math.random() * images.length)];
+                let url = images[img_index];
+                document.getElementById('header').style.backgroundImage = 'url('+url+')';
+                img_index++;
+                if (img_index >= images.length) {
+                    img_index = 0;
+                }
+            },5000);
 
-    </script>
-    <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+        </script>
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
     <body>
         <nav>
@@ -27,7 +33,7 @@
             </ul>
         </nav>
 
-        <header>
+        <header id="header">
             <h1>Hello World!</h1>
         </header>
 
