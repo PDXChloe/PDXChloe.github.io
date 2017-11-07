@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica Neue, Arial;
+    font-family: Helvetica Neue, Arial, sans-serif;
     font-size: 10px;
     color: #333333;
     box-sizing: border-box;
@@ -47,12 +47,13 @@ header {
     align-items: center;
     color:#d9d9d9;
     height: 60em;
-    background-image: url("wood2.jpg");
+    background-image: url("capehouse.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     box-shadow: 0 10px 20px rgba(50,50,50,.95);
-    background-color: #b3d9ff /* For browsers who do not support background images*/
+    background-color: #b3d9ff; /* For browsers who do not support background images*/
+    transition: background-image 4.8s ease-in-out;
 }
 
 
