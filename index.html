@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <title>Chloe Elliot / Web Developer</title>
         <script>
-            var images=['wood2.jpg','windmillstairway.jpg','newport.jpg','capehouse.jpg'];
+            let images=['wood2.jpg','windmillstairway.jpg','newport.jpg','capehouse.jpg'];
             let img_index = 0;
 
-            setInterval(function(){
+            setInterval(function(){ //sets the background image to change from a list of images in intervals of 7 seconds and then loops it. used Css animation to make the transition less jarring.
                 //var url=images[Math.floor(Math.random() * images.length)];
                 let url = images[img_index];
                 document.getElementById('header').style.backgroundImage = 'url('+url+')';
